@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --color-pink: #e51a87;
+  --color-white: #f3f3f3;
+  --color-pink-mono: #ea489f;
+  --color-pink-comp: #1ae578;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-pink-comp);
+  background-image: linear-gradient(20deg, rgba(256, 40, 111, 0.71), rgba(14, 95, 140, 0.85)),
+    url(https://images.pexels.com/photos/5554772/pexels-photo-5554772.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+p {
+  font-size: 1.125rem;
+}
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+label {
+  display: flex;
+  font-size: 1.3rem;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.container {
+  width: 100%;
+  margin: 3.5rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 5px;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  text-decoration: overline;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.clue {
+  margin-left: 5px;
+  font-size: 0.9em;
+  margin-top: 1px;
+  color: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 0.6rem;
+  }
+}
+
+form {
+  background-color: #ea489f;
+  border-radius: 20px;
+  padding: 0.63rem 1.3rem;
+}
+.form-group {
+  margin: 0 auto 0.88rem auto;
+  padding: 0.31rem;
+}
+
+#most-like {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  padding: 0.35rem 0.65rem;
+  color: black;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-height: 2.22rem;
+  min-width: 1.22rem;
+}
+.input-textarea {
+  width: 100%;
+  min-height: 144px;
+  padding: 0.44rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  margin: 6px 2px;
+  cursor: pointer;
+  background: var(--color-pink);
+  border-radius: 11px;
+  border-style: inset;
+}
